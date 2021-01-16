@@ -4,7 +4,7 @@ CMD sudo yum install httpd -y
 
 COPY index.html /var/www/html/index.html
 
-CMD systemctl start httpd
+CMD /bin/systemctl start httpd.service
 
 
 
