@@ -1,10 +1,8 @@
-FROM centos:latest
+FROM httpd:2.4
 
-CMD sudo yum install httpd -y
 
-COPY index.html /var/www/html/index.html
+COPY index.html /usr/local/apache2/index.html
 
-CMD /bin/systemctl start httpd.service
 
 
 
